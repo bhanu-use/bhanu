@@ -1116,8 +1116,8 @@ display: flex;
    
 									
 									<!-- Footer Section -->
-												
-												
+
+
 
 <footer class="footer mt-9 py-3" style="background-color:lightskyblue; color: black; height: 300px;">
 
@@ -1126,29 +1126,29 @@ display: flex;
 	<div class="col-md-3" style="left: 15%">
 	<h5>
 	<span style="color: black;">About Us</span>
-	</h5>				
+	</h5>
 	<ul>
 	<li th:each="aboutus : ${aboutusList}">
 	<a style="color: black" th:href="@{'/aboutus/' + ${aboutus.id}}" th:text="${aboutus.aboutus}"></a>
 	</li>
-	</ul>		
+	</ul>
 	</div>
-	
+
 	<div class="col-md-3" style="left: 20%">
 	<h5>
 	<span style="color: black;">Consumer Policy</span>
 	</h5>
 	<ul>
 	<li th:each="consumerpolicy : ${consumerpolicyList}">
-	<a style="color: black" th:href="@{'/consumerpolicy/' + ${consumerpolicy.id}}" th:text="${consumerpolicy.consumerpolicy}"></a> 
+	<a style="color: black" th:href="@{'/consumerpolicy/' + ${consumerpolicy.id}}" th:text="${consumerpolicy.consumerpolicy}"></a>
 	<a href="https://www.google.com" target="_blank"></a>
 	</li>
-	</ul>			
+	</ul>
 	</div>
-	
+
 	<div class="col-md-3" style="left: 30%">
 	<h5>
-	
+
 	<span style="color: black;">Customer Support</span>
 	</h5>
 	<ul>
@@ -1203,30 +1203,30 @@ display: flex;
 	<h5>
 	<span style="color: black; display: flex;"> <!-- Keep In Touch --></span>
 	</h5>
-	
+
 	<ul class="list-unstyled" style=" display:flex; flex-direction:row; gap:10px; margin-left:530px;">
 	<li th:each="keepintouch : ${keepintouchList}" style="margin-bottom: 15px; display: ruby;">
 	<a style="align-items: center;" href="https://www.google.com">
 	<img th:src="@{'/images/keepintouch/' + ${keepintouch.googleimage}}" alt="google" width="30" height="30">
 	</a>
 	</li>
-								
+
 	<li th:each="keepintouch : ${keepintouchList}" style="margin-bottom: 15px; display: ruby;">
 	<a style="align-items: center;" href="https://www.linkedin.com">
 	<img th:src="@{'/images/keepintouch/' + ${keepintouch.linkedinimage}}" alt="likedin" width="30" height="30">
 	</a>
 	</li>
-								
+
 	<li th:each="keepintouch : ${keepintouchList}"vstyle="margin-bottom: 15px; display: ruby;">
 	<a style="align-items: center;" href="https://www.facebook.com">
 	<img th:src="@{'/images/keepintouch/' + ${keepintouch.facebookimage}}" alt="fb" width="30" height="30">
 	</a>
 	</li>
-								
+
 	<li th:each="keepintouch : ${keepintouchList}" style="margin-bottom: 15px; display: ruby;">
 	<a style="align-items: center;" href="https://www.x.com">
 	<img th:src="@{'/images/keepintouch/' + ${keepintouch.ximage}}" alt="x" width="30" height="30"></a></li>
-								
+
 	<li th:each="keepintouch : ${keepintouchList}" style="margin-bottom: 15px; display: ruby;">
 	<a style="align-items: center;" href="https://www.instagram.com">
 	<img th:src="@{'/images/keepintouch/' + ${keepintouch.instargramiamge}}" alt="..." width="30" height="30">
@@ -1235,8 +1235,8 @@ display: flex;
 	</ul>
 </div>
 
-	<a href="conditions" class="mr-3" style="color:black">Conditions of Use & Sale</a> 
-	<a href="cancelreturn" class="mr-3" style="color:black">Privacy Notice</a> 
+	<a href="conditions" class="mr-3" style="color:black">Conditions of Use & Sale</a>
+	<a href="cancelreturn" class="mr-3" style="color:black">Privacy Notice</a>
 	<a href="intrest" style="color:black">Interest-Based Ads</a>
 	</div>
 	<h6>
